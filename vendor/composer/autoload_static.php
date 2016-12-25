@@ -8,12 +8,16 @@ class ComposerStaticInitdce549e9e8158269d9c08eb3735e5ccd
 {
     public static $files = array (
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
+        '5255c38a0faeba867671b61dfda6d864' => __DIR__ . '/..' . '/paragonie/random_compat/lib/random.php',
+        '72579e7bd17821bb1321b87411366eae' => __DIR__ . '/..' . '/illuminate/support/helpers.php',
+        '27d02f1a44e4a061de9e6eaa38156408' => __DIR__ . '/../..' . '/src/setup_eloquent.php',
     );
 
     public static $prefixLengthsPsr4 = array (
         'S' => 
         array (
             'Symfony\\Polyfill\\Mbstring\\' => 26,
+            'Symfony\\Component\\Translation\\' => 30,
             'Symfony\\Component\\Routing\\' => 26,
             'Symfony\\Component\\HttpFoundation\\' => 33,
             'Symfony\\Component\\EventDispatcher\\' => 34,
@@ -25,12 +29,29 @@ class ComposerStaticInitdce549e9e8158269d9c08eb3735e5ccd
             'React\\EventLoop\\' => 16,
             'Ratchet\\' => 8,
         ),
+        'I' => 
+        array (
+            'Illuminate\\Support\\' => 19,
+            'Illuminate\\Events\\' => 18,
+            'Illuminate\\Database\\' => 20,
+            'Illuminate\\Contracts\\' => 21,
+            'Illuminate\\Container\\' => 21,
+        ),
+        'C' => 
+        array (
+            'ChatApp\\' => 8,
+            'Carbon\\' => 7,
+        ),
     );
 
     public static $prefixDirsPsr4 = array (
         'Symfony\\Polyfill\\Mbstring\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-mbstring',
+        ),
+        'Symfony\\Component\\Translation\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/translation',
         ),
         'Symfony\\Component\\Routing\\' => 
         array (
@@ -59,6 +80,34 @@ class ComposerStaticInitdce549e9e8158269d9c08eb3735e5ccd
         'Ratchet\\' => 
         array (
             0 => __DIR__ . '/..' . '/cboden/ratchet/src/Ratchet',
+        ),
+        'Illuminate\\Support\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/illuminate/support',
+        ),
+        'Illuminate\\Events\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/illuminate/events',
+        ),
+        'Illuminate\\Database\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/illuminate/database',
+        ),
+        'Illuminate\\Contracts\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/illuminate/contracts',
+        ),
+        'Illuminate\\Container\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/illuminate/container',
+        ),
+        'ChatApp\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/src',
+        ),
+        'Carbon\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon',
         ),
     );
 
@@ -89,11 +138,11 @@ class ComposerStaticInitdce549e9e8158269d9c08eb3735e5ccd
                 0 => __DIR__ . '/..' . '/evenement/evenement/src',
             ),
         ),
-        'C' => 
+        'D' => 
         array (
-            'ChatApp' => 
+            'Doctrine\\Common\\Inflector\\' => 
             array (
-                0 => __DIR__ . '/../..' . '/class',
+                0 => __DIR__ . '/..' . '/doctrine/inflector/lib',
             ),
         ),
     );

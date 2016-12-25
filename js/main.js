@@ -19,6 +19,7 @@
 
     conn.onmessage = function(e) {
         var msg = JSON.parse(e.data);
+        console.log(msg);
         updateMessages(msg);
     };
 
@@ -33,15 +34,15 @@
             'text': user + ' entered the room',
             'time': moment().format('hh:mm a')
         };
-
         updateMessages(msg);
-        conn.send(JSON.stringify(msg));
+        // conn.send(msg);
 
         $('#user').val('');
     });
 
 
-    $('#send-msg').click(function(){
+    $('#send-msg').click(function(e){
+        e.preventDefault();
         var text = $('#msg').val();
         var msg = {
             'user': user,
@@ -49,7 +50,8 @@
             'time': moment().format('hh:mm a')
         };
         updateMessages(msg);
-        conn.send(JSON.stringify(msg));
+        msg = JSON.stringify(msg)
+        conn.send(msg);
 
         $('#msg').val('');
     });
@@ -63,7 +65,7 @@
             'time': moment().format('hh:mm a')
         };
         updateMessages(msg);
-        conn.send(JSON.stringify(msg));
+        // conn.send(msg);
 
         $('#messages').html('');
         messages = [];

@@ -11,5 +11,5 @@ return array(
     'Guzzle\\Http' => array($vendorDir . '/guzzle/http'),
     'Guzzle\\Common' => array($vendorDir . '/guzzle/common'),
     'Evenement' => array($vendorDir . '/evenement/evenement/src'),
-    'ChatApp' => array($baseDir . '/class'),
+    'Doctrine\\Common\\Inflector\\' => array($vendorDir . '/doctrine/inflector/lib'),
 );
