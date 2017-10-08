@@ -25,5 +25,3 @@ $capsule->addConnection([
 $capsule->setEventDispatcher(new Dispatcher(new $container));
 $capsule->setAsGlobal();
 $capsule->bootEloquent();
-
-?>
